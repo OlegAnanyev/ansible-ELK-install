@@ -32,8 +32,10 @@ logstash-7.10.1-linux-x86_64.tar.gz
 ```bash
 ansible-playbook -i inventory/prod.yml --ask-pass --ask-become-pass site.yml
 ```
-
+Результаты первого запуска:
 ![Результаты первого запуска](https://raw.githubusercontent.com/OlegAnanyev/ansible-ELK-install/master/screenshots/first_run.png)
+
+Результаты повторного запуска:
 ![Результаты повторного запуска](https://raw.githubusercontent.com/OlegAnanyev/ansible-ELK-install/master/screenshots/second_run.png)
 
 ## Запуск установленных сервисов
@@ -42,14 +44,16 @@ ansible-playbook -i inventory/prod.yml --ask-pass --ask-become-pass site.yml
 #на хосте с эластиком и кибаной
 elasticsearch -d -p pid && kibana
 ```
-Работающая Kibana: kibana_working.png
+Работающая Kibana:
+![Работающая Kibana](https://raw.githubusercontent.com/OlegAnanyev/ansible-ELK-install/master/screenshots/kibana_working.png)
 
 ```bash
 #на хосте с логстешем
 logstash -f /opt/logstash/7.10.1/config/logstash.conf
 ```
 
-Работающий Logstash: logstash_working.png
+Работающий Logstash:
+![Работающий Logstash](https://raw.githubusercontent.com/OlegAnanyev/ansible-ELK-install/master/screenshots/logstash_working.png)
 
 ## Проверка работоспособности
 * тут можно посмотреть, жив ли эластик: http://IP-ADRESS-ELASTIC-KIBANA-HOST:9200/
