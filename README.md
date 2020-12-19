@@ -27,11 +27,14 @@ kibana-7.10.1-linux-x86_64.tar.gz
 logstash-7.10.1-linux-x86_64.tar.gz
 ```
 
-## Запуск плейбука для установки и конфигурирования Java, Elasticsearch, Kibana, Logstash
+## Запуск плейбука
 
 ```bash
 ansible-playbook -i inventory/prod.yml --ask-pass --ask-become-pass site.yml
 ```
+
+Результаты первого запуска: first_run.png
+Результаты повторного запуска: second_run.png
 
 ## Запуск установленных сервисов
 
@@ -39,11 +42,14 @@ ansible-playbook -i inventory/prod.yml --ask-pass --ask-become-pass site.yml
 #на хосте с эластиком и кибаной
 elasticsearch -d -p pid && kibana
 ```
+Работающая Kibana: kibana_working.png
 
 ```bash
 #на хосте с логстешем
 logstash -f /opt/logstash/7.10.1/config/logstash.conf
 ```
+
+Работающий Logstash: logstash_working.png
 
 ## Проверка работоспособности
 * тут можно посмотреть, жив ли эластик: http://IP-ADRESS-ELASTIC-KIBANA-HOST:9200/
