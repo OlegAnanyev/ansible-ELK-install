@@ -45,7 +45,7 @@ ansible-playbook -i inventory/prod.yml --ask-pass --ask-become-pass site.yml
 elasticsearch -d -p pid && kibana
 ```
 Работающая Kibana:
-![Работающая Kibana](https://raw.githubusercontent.com/OlegAnanyev/ansible-ELK-install/master/screenshots/kibana_working.png)
+![Работающая Kibana](https://raw.githubusercontent.com/OlegAnanyev/ansible-ELK-install/master/screenshots/kibana_running.png)
 
 ```bash
 #на хосте с логстешем
@@ -53,7 +53,7 @@ logstash -f /opt/logstash/7.10.1/config/logstash.conf
 ```
 
 Работающий Logstash:
-![Работающий Logstash](https://raw.githubusercontent.com/OlegAnanyev/ansible-ELK-install/master/screenshots/logstash_working.png)
+![Работающий Logstash](https://raw.githubusercontent.com/OlegAnanyev/ansible-ELK-install/master/screenshots/logstash_running.png)
 
 ## Проверка работоспособности
 * тут можно посмотреть, жив ли эластик: http://IP-ADRESS-ELASTIC-KIBANA-HOST:9200/
