@@ -1,0 +1,7 @@
+---
+  logstash_version: "7.10.1"
+  logstash_home: "/opt/logstash/{{ logstash_version }}"
+  logstash_package: "logstash-7.10.1-linux-x86_64.tar.gz"
+  #параметр для формирования конфига логстеша через темплейт
+  #т.е. адрес, по котором логстеш будет искать эластик
+  logstash_elastic_ip: "192.168.52.110"
