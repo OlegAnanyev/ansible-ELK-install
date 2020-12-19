@@ -58,3 +58,6 @@ logstash -f /opt/logstash/7.10.1/config/logstash.conf
 ## Проверка работоспособности
 * тут можно посмотреть, жив ли эластик: http://IP-ADRESS-ELASTIC-KIBANA-HOST:9200/
 * тут можно посмотреть, работает ли кибана: http://IP-ADRESS-ELASTIC-KIBANA-HOST:5601/
+
+Веб-интерфейс Kibana:
+![Веб-интерфейс Kibana](https://raw.githubusercontent.com/OlegAnanyev/ansible-ELK-install/master/screenshots/kibana_web.png)
