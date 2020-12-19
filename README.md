@@ -33,8 +33,8 @@ logstash-7.10.1-linux-x86_64.tar.gz
 ansible-playbook -i inventory/prod.yml --ask-pass --ask-become-pass site.yml
 ```
 
-Результаты первого запуска: first_run.png
-Результаты повторного запуска: second_run.png
+![Результаты первого запуска](https://raw.githubusercontent.com/OlegAnanyev/ansible-ELK-install/master/screenshots/first_run.png)
+![Результаты повторного запуска](https://raw.githubusercontent.com/OlegAnanyev/ansible-ELK-install/master/screenshots/second_run.png)
 
 ## Запуск установленных сервисов
 
